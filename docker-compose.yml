@@ -1,0 +1,73 @@
+version: '3'
+services:
+  mqtt_broker:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt_broker
+    ports:
+      - "8883:8883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/certs:/home/certs
+    networks:
+        idc-net:
+            ipv4_address: 172.100.10.10
+
+  mqtt_subscriber_processor:
+    build: ./subscriber_processor
+    container_name: mqtt_subscriber_processor
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mqtt_broker
+      - mongodb
+      - ml_processor
+    networks:
+        idc-net:
+            ipv4_address: 172.100.10.17
+
+  ml_processor:
+    build: ./ml_processor
+    container_name: ml_processor
+    ports:
+      - "5000:5000"
+    networks:
+        idc-net:
+            ipv4_address: 172.100.10.18
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27018:27017"
+    networks:
+        idc-net:
+            ipv4_address: 172.100.10.16
+    volumes:
+      - ./mongo_data:/data/db
+
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red
+    environment:
+      - TZ=Europe/Portugal
+    ports:
+      - 1880:1880
+    networks:
+      idc-net:
+        ipv4_address: 172.100.10.15
+    volumes:
+      - ./node-red-data:/data
+    depends_on:
+      - mqtt_subscriber_processor
+
+volumes:
+  shared_data:
+
+networks:
+  idc-net:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+          - subnet: 172.100.10.0/24

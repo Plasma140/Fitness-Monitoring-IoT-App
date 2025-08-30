@@ -1,0 +1,8 @@
+show dbs
+it
+db.sensors_data.find()
+use iot_data
+show dbs
+db.sensors_data.find().pretty()
+use iot_data
+show dbs

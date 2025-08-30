@@ -1,0 +1,8 @@
+
+Para inicializar o Docker usa-se o comando: docker-compose up --build
+
+Para correr mqtt-pub.py (publisher): python mqtt-pub.py --weight 75 --height 1.75 --gender Male --age 21
+Nas variaveis weights, height, gender e age escolher valor que desejar
+
+Existe a pequena probabilidade de ao se fazer deploy dos containers, o container mqtt_subscriber_processor não se consiga
+conectar com o MongoDB e caso isso aconteça basta reiniciar o container mqtt_subscriber_processor  outra vez

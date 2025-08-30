@@ -1,0 +1,3142 @@
+[
+    {
+        "id": "6238edb3154f5734",
+        "type": "tab",
+        "label": "Steps",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7bc6584a60d54211",
+        "type": "tab",
+        "label": "Calories",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "680ba0b12fd60781",
+        "type": "tab",
+        "label": "Distance",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "815514c370b844ed",
+        "type": "tab",
+        "label": "Activity",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b4843149eb2e2d9d",
+        "type": "ui_tab",
+        "name": "Basic Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f6c0c781d0c8adfd",
+        "type": "ui_group",
+        "name": "Button",
+        "tab": "b4843149eb2e2d9d",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6eeee87856225685",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e4aa0cf65648490c",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "f108a7f29c4b4ef4",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "fc12e4ab1bb8738e",
+        "type": "ui-page",
+        "name": "Steps",
+        "ui": "e4aa0cf65648490c",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f108a7f29c4b4ef4",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "1872fb60bec85182",
+        "type": "ui-group",
+        "name": "Daily Steps",
+        "page": "fc12e4ab1bb8738e",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "center",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5a4893d9e41568e5",
+        "type": "ui-page",
+        "name": "Calories",
+        "ui": "e4aa0cf65648490c",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f108a7f29c4b4ef4",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "0cbaa462e78cb40b",
+        "type": "ui-group",
+        "name": "Daily Calories",
+        "page": "5a4893d9e41568e5",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5b866decc0e5508d",
+        "type": "ui-group",
+        "name": "Annual Steps",
+        "page": "fc12e4ab1bb8738e",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a096ef3a52379b68",
+        "type": "ui-group",
+        "name": "Monthly Steps",
+        "page": "fc12e4ab1bb8738e",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2bcc3a019c07e66d",
+        "type": "ui-group",
+        "name": "Weekly Steps",
+        "page": "fc12e4ab1bb8738e",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6dc2df434673cc71",
+        "type": "ui-group",
+        "name": "Weekly Calories",
+        "page": "5a4893d9e41568e5",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "268d415a933fc3ef",
+        "type": "ui-group",
+        "name": "Monthly Calories",
+        "page": "5a4893d9e41568e5",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fed592aa4aefc93c",
+        "type": "ui-group",
+        "name": "Annually Calories",
+        "page": "5a4893d9e41568e5",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "40cf1f374a065198",
+        "type": "ui-page",
+        "name": "Distance",
+        "ui": "e4aa0cf65648490c",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f108a7f29c4b4ef4",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c3df2e927110fea9",
+        "type": "ui-group",
+        "name": "Daily Distance",
+        "page": "40cf1f374a065198",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c74959d999b458a4",
+        "type": "ui-group",
+        "name": "Weekly Distance",
+        "page": "40cf1f374a065198",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "addb30e852881a31",
+        "type": "ui-group",
+        "name": "Monthly Distance",
+        "page": "40cf1f374a065198",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ec46b12acd09e5d7",
+        "type": "ui-group",
+        "name": "Annually Distance",
+        "page": "40cf1f374a065198",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "4ec49cdc233343f2",
+        "type": "ui-page",
+        "name": "Activity",
+        "ui": "e4aa0cf65648490c",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "f108a7f29c4b4ef4",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "212fcc6f7826dde8",
+        "type": "ui-group",
+        "name": "Daily Activity",
+        "page": "4ec49cdc233343f2",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d50d6eebf7338456",
+        "type": "ui-group",
+        "name": "Weekly Activity",
+        "page": "4ec49cdc233343f2",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b629da939e3728c5",
+        "type": "ui-group",
+        "name": "Monthly Activity",
+        "page": "4ec49cdc233343f2",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5c2b7e28c59b4e56",
+        "type": "ui-group",
+        "name": "Annually Activity",
+        "page": "4ec49cdc233343f2",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5d59beb02ee1ff34",
+        "type": "ui-gauge",
+        "z": "6238edb3154f5734",
+        "name": "Daily Steps",
+        "group": "1872fb60bec85182",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Daily Steps",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "4000",
+                "color": "#1100ff"
+            },
+            {
+                "from": "7000",
+                "color": "#00ff10"
+            },
+            {
+                "from": "10000",
+                "color": "#ffffff"
+            }
+        ],
+        "min": "1",
+        "max": "10000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b312f27791ecafb9",
+        "type": "http request",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_daily_steps",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "e46cfc9dde96e29a"
+            ]
+        ]
+    },
+    {
+        "id": "e46cfc9dde96e29a",
+        "type": "json",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "d7f4d74aaefcdbc4"
+            ]
+        ]
+    },
+    {
+        "id": "92278df140cb7a7c",
+        "type": "http request",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_weekly_steps",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "cd0f6606d3781f13"
+            ]
+        ]
+    },
+    {
+        "id": "cd0f6606d3781f13",
+        "type": "json",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "13cd4d474ec74f6a"
+            ]
+        ]
+    },
+    {
+        "id": "b0ba4d7c9190af57",
+        "type": "http request",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_monthly_steps",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "077603daef21604a"
+            ]
+        ]
+    },
+    {
+        "id": "077603daef21604a",
+        "type": "json",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "93526b0fadbfcdaf"
+            ]
+        ]
+    },
+    {
+        "id": "54bc73f6c6fe4c3f",
+        "type": "http request",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_anually_steps",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "6a27596bbc3ae18a"
+            ]
+        ]
+    },
+    {
+        "id": "6a27596bbc3ae18a",
+        "type": "json",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "e46079dd122a20b9"
+            ]
+        ]
+    },
+    {
+        "id": "a79403fa2132d61b",
+        "type": "ui-gauge",
+        "z": "6238edb3154f5734",
+        "name": "Weekly Steps",
+        "group": "2bcc3a019c07e66d",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Weekly Steps",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "28000",
+                "color": "#1100ff"
+            },
+            {
+                "from": "49000",
+                "color": "#00ff11"
+            },
+            {
+                "from": "70000",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "70000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3a8c59519f2d07c4",
+        "type": "ui-gauge",
+        "z": "6238edb3154f5734",
+        "name": "Monthly Steps",
+        "group": "a096ef3a52379b68",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Monthly Steps",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "120000",
+                "color": "#1100ff"
+            },
+            {
+                "from": "210000",
+                "color": "#00ff11"
+            },
+            {
+                "from": "300000",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "300000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "594f7c5925dea411",
+        "type": "ui-gauge",
+        "z": "6238edb3154f5734",
+        "name": "Annually Steps",
+        "group": "5b866decc0e5508d",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Annually Steps",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "1460000",
+                "color": "#1100ff"
+            },
+            {
+                "from": "2555000",
+                "color": "#00ff11"
+            },
+            {
+                "from": "3650000",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "3650000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9c896810683a7c7c",
+        "type": "inject",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "92278df140cb7a7c"
+            ]
+        ]
+    },
+    {
+        "id": "8e15937080d7840b",
+        "type": "inject",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "b312f27791ecafb9"
+            ]
+        ]
+    },
+    {
+        "id": "d3f55fa9f11a564e",
+        "type": "inject",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "b0ba4d7c9190af57"
+            ]
+        ]
+    },
+    {
+        "id": "ba2154d4735bc6fa",
+        "type": "inject",
+        "z": "6238edb3154f5734",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "54bc73f6c6fe4c3f"
+            ]
+        ]
+    },
+    {
+        "id": "d7f4d74aaefcdbc4",
+        "type": "function",
+        "z": "6238edb3154f5734",
+        "name": "function 5",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1].value);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [
+                "5d59beb02ee1ff34"
+            ]
+        ]
+    },
+    {
+        "id": "13cd4d474ec74f6a",
+        "type": "function",
+        "z": "6238edb3154f5734",
+        "name": "function 6",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1].value);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "a79403fa2132d61b"
+            ]
+        ]
+    },
+    {
+        "id": "93526b0fadbfcdaf",
+        "type": "function",
+        "z": "6238edb3154f5734",
+        "name": "function 7",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1].value);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "3a8c59519f2d07c4"
+            ]
+        ]
+    },
+    {
+        "id": "e46079dd122a20b9",
+        "type": "function",
+        "z": "6238edb3154f5734",
+        "name": "function 8",
+        "func": "//if (Array.isArray(msg.payload) && msg.payload.length > 0) {\n//    msg.payload = msg.payload[0].value;\n//} else {\n//    msg.payload = \"Erro: Estrutura inesperada!\";\n//}\n//return msg;\n//node.warn(msg.payload[msg.payload.length - 1].value);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value;\n}\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "594f7c5925dea411"
+            ]
+        ]
+    },
+    {
+        "id": "3884f7841d9b0ad0",
+        "type": "ui-gauge",
+        "z": "7bc6584a60d54211",
+        "name": "Daily Calories",
+        "group": "0cbaa462e78cb40b",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Daily Calories",
+        "units": "cal",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "2000",
+                "color": "#ffa200"
+            },
+            {
+                "from": "2300",
+                "color": "#fbff00"
+            },
+            {
+                "from": "2600",
+                "color": "#b3ff00"
+            },
+            {
+                "from": "2900",
+                "color": "#2bff00"
+            },
+            {
+                "from": "3200",
+                "color": "#1100ff"
+            }
+        ],
+        "min": "1",
+        "max": "3200",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "13d613260e59857e",
+        "type": "http request",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_daily_calories",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "9ad422f5567d629a"
+            ]
+        ]
+    },
+    {
+        "id": "9ad422f5567d629a",
+        "type": "json",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "47dd2bf0c2ed9991"
+            ]
+        ]
+    },
+    {
+        "id": "cbb2380115a5bf66",
+        "type": "http request",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_weekly_calories",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "d288bb341170e47c"
+            ]
+        ]
+    },
+    {
+        "id": "d288bb341170e47c",
+        "type": "json",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "3c7377be060b57c8"
+            ]
+        ]
+    },
+    {
+        "id": "550b67ccce5349e0",
+        "type": "http request",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_monthly_calories",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "3b5b597c6580cd51"
+            ]
+        ]
+    },
+    {
+        "id": "3b5b597c6580cd51",
+        "type": "json",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "91732aaa0e4ba108"
+            ]
+        ]
+    },
+    {
+        "id": "9ce5e0859ac51d07",
+        "type": "http request",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_anually_calories",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "ac4816efd07b4c11"
+            ]
+        ]
+    },
+    {
+        "id": "ac4816efd07b4c11",
+        "type": "json",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "40220d8c78267ea4"
+            ]
+        ]
+    },
+    {
+        "id": "68730fac1e82a682",
+        "type": "ui-gauge",
+        "z": "7bc6584a60d54211",
+        "name": "Weekly Calories",
+        "group": "6dc2df434673cc71",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Weekly Calories",
+        "units": "cal",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "14000",
+                "color": "#ffa200"
+            },
+            {
+                "from": "16100",
+                "color": "#fbff00"
+            },
+            {
+                "from": "18200",
+                "color": "#b3ff00"
+            },
+            {
+                "from": "20300",
+                "color": "#2bff00"
+            },
+            {
+                "from": "22400",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "22400",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d9faa2f196777076",
+        "type": "inject",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "13d613260e59857e"
+            ]
+        ]
+    },
+    {
+        "id": "47dd2bf0c2ed9991",
+        "type": "function",
+        "z": "7bc6584a60d54211",
+        "name": "function 9",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].total_calories.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "3884f7841d9b0ad0"
+            ]
+        ]
+    },
+    {
+        "id": "3c7377be060b57c8",
+        "type": "function",
+        "z": "7bc6584a60d54211",
+        "name": "function 10",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].total_calories.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "68730fac1e82a682"
+            ]
+        ]
+    },
+    {
+        "id": "91732aaa0e4ba108",
+        "type": "function",
+        "z": "7bc6584a60d54211",
+        "name": "function 11",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].total_calories.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "820c4a068ece6d7c"
+            ]
+        ]
+    },
+    {
+        "id": "40220d8c78267ea4",
+        "type": "function",
+        "z": "7bc6584a60d54211",
+        "name": "function 12",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].total_calories.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 280,
+        "wires": [
+            [
+                "c4b5f2d4e9d9e479"
+            ]
+        ]
+    },
+    {
+        "id": "07109f4276b407fa",
+        "type": "inject",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "cbb2380115a5bf66"
+            ]
+        ]
+    },
+    {
+        "id": "b1dcc22a3c4c36b1",
+        "type": "inject",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "550b67ccce5349e0"
+            ]
+        ]
+    },
+    {
+        "id": "084570069664e2f4",
+        "type": "inject",
+        "z": "7bc6584a60d54211",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "9ce5e0859ac51d07"
+            ]
+        ]
+    },
+    {
+        "id": "820c4a068ece6d7c",
+        "type": "ui-gauge",
+        "z": "7bc6584a60d54211",
+        "name": "Monthly Calories",
+        "group": "268d415a933fc3ef",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Monthly Calories",
+        "units": "cal",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "60000",
+                "color": "#ffa200"
+            },
+            {
+                "from": "69000",
+                "color": "#fbff00"
+            },
+            {
+                "from": "78000",
+                "color": "#b3ff00"
+            },
+            {
+                "from": "87000",
+                "color": "#2bff00"
+            },
+            {
+                "from": "96000",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "96000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c4b5f2d4e9d9e479",
+        "type": "ui-gauge",
+        "z": "7bc6584a60d54211",
+        "name": "Annually Calories",
+        "group": "fed592aa4aefc93c",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Annually Calories",
+        "units": "cal",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ff0000"
+            },
+            {
+                "from": "730000",
+                "color": "#ffa200"
+            },
+            {
+                "from": "839500",
+                "color": "#fbff00"
+            },
+            {
+                "from": "949000",
+                "color": "#b3ff00"
+            },
+            {
+                "from": "1058500",
+                "color": "#2bff00"
+            },
+            {
+                "from": "1168000",
+                "color": "#000000"
+            }
+        ],
+        "min": "1",
+        "max": "1168000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c46534e80efe59b0",
+        "type": "ui-gauge",
+        "z": "680ba0b12fd60781",
+        "name": "Daily Distance",
+        "group": "c3df2e927110fea9",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Daily Distance",
+        "units": "m",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff"
+            },
+            {
+                "from": "10000",
+                "color": "#000000"
+            }
+        ],
+        "min": "0",
+        "max": "10000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "70f2a3998ea724fd",
+        "type": "http request",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_daily_dis",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "5be3a6fa08a10f8f"
+            ]
+        ]
+    },
+    {
+        "id": "5be3a6fa08a10f8f",
+        "type": "json",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "3e427f94729144e5"
+            ]
+        ]
+    },
+    {
+        "id": "8936d3396a5bdeb0",
+        "type": "http request",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_weekly_dis",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "3337f078e44ba98f"
+            ]
+        ]
+    },
+    {
+        "id": "3337f078e44ba98f",
+        "type": "json",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "319a814e31376b58"
+            ]
+        ]
+    },
+    {
+        "id": "37f2d6773cefb07a",
+        "type": "http request",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_monthly_dis",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "4e790654362de653"
+            ]
+        ]
+    },
+    {
+        "id": "4e790654362de653",
+        "type": "json",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "7444cfa7a562699a"
+            ]
+        ]
+    },
+    {
+        "id": "0b8a071b6c240446",
+        "type": "http request",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_anually_dis",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "28f91807e7042958"
+            ]
+        ]
+    },
+    {
+        "id": "28f91807e7042958",
+        "type": "json",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "f0a6afecf56f9424"
+            ]
+        ]
+    },
+    {
+        "id": "ca5eef46ef7d42d8",
+        "type": "ui-gauge",
+        "z": "680ba0b12fd60781",
+        "name": "Weekly Distance",
+        "group": "c74959d999b458a4",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Weekly Distance",
+        "units": "m",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff"
+            },
+            {
+                "from": "70000",
+                "color": "#000000"
+            }
+        ],
+        "min": "0",
+        "max": "70000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1a306594d4994d2a",
+        "type": "ui-gauge",
+        "z": "680ba0b12fd60781",
+        "name": "Monthly Distance",
+        "group": "addb30e852881a31",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Monthly Distance",
+        "units": "m",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff"
+            },
+            {
+                "from": "300000",
+                "color": "#000000"
+            }
+        ],
+        "min": "0",
+        "max": "300000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1bd469b07397ac10",
+        "type": "ui-gauge",
+        "z": "680ba0b12fd60781",
+        "name": "Annually Distance",
+        "group": "ec46b12acd09e5d7",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Annually Distance",
+        "units": "m",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#0000ff"
+            },
+            {
+                "from": "3650000",
+                "color": "#000000"
+            }
+        ],
+        "min": "0",
+        "max": "3650000",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "90321fd8ebaca59f",
+        "type": "inject",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "70f2a3998ea724fd"
+            ]
+        ]
+    },
+    {
+        "id": "3e427f94729144e5",
+        "type": "function",
+        "z": "680ba0b12fd60781",
+        "name": "function 13",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 100,
+        "wires": [
+            [
+                "c46534e80efe59b0"
+            ]
+        ]
+    },
+    {
+        "id": "319a814e31376b58",
+        "type": "function",
+        "z": "680ba0b12fd60781",
+        "name": "function 14",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 160,
+        "wires": [
+            [
+                "ca5eef46ef7d42d8"
+            ]
+        ]
+    },
+    {
+        "id": "7444cfa7a562699a",
+        "type": "function",
+        "z": "680ba0b12fd60781",
+        "name": "function 15",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "1a306594d4994d2a"
+            ]
+        ]
+    },
+    {
+        "id": "f0a6afecf56f9424",
+        "type": "function",
+        "z": "680ba0b12fd60781",
+        "name": "function 16",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = msg.payload[msg.payload.length - 1].value.toFixed(2);\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 280,
+        "wires": [
+            [
+                "1bd469b07397ac10"
+            ]
+        ]
+    },
+    {
+        "id": "5e7aaca9f70e5f4e",
+        "type": "inject",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "8936d3396a5bdeb0"
+            ]
+        ]
+    },
+    {
+        "id": "1cf8d735a06655c6",
+        "type": "inject",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "37f2d6773cefb07a"
+            ]
+        ]
+    },
+    {
+        "id": "bfd5d345626f980e",
+        "type": "inject",
+        "z": "680ba0b12fd60781",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "0b8a071b6c240446"
+            ]
+        ]
+    },
+    {
+        "id": "f3688e79a1023125",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Daily Activity Walked",
+        "group": "212fcc6f7826dde8",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Daily Activity Walked",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "30",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "60",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "60",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c268e83bdf1b32d1",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_daily_dis_walked",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "898146c6f7e306e1"
+            ]
+        ]
+    },
+    {
+        "id": "898146c6f7e306e1",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "88763d71f8bac4a8"
+            ]
+        ]
+    },
+    {
+        "id": "e7c939e17afb338e",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_weekly_dis_walked",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "9f19940a85c7c44b"
+            ]
+        ]
+    },
+    {
+        "id": "9f19940a85c7c44b",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "0d6eef25efe3b916"
+            ]
+        ]
+    },
+    {
+        "id": "29dbb936051716ef",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_monthly_dis_walked",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "2b429b3b90c2b62c"
+            ]
+        ]
+    },
+    {
+        "id": "2b429b3b90c2b62c",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "0f5bca1c2ff3a6ec"
+            ]
+        ]
+    },
+    {
+        "id": "2cca08de94638272",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_anual_dis_walked",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "ad46e086da11bbeb"
+            ]
+        ]
+    },
+    {
+        "id": "ad46e086da11bbeb",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "73d7b3473542270d"
+            ]
+        ]
+    },
+    {
+        "id": "8f3e8af5e36677f3",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Weekly Activity Walked",
+        "group": "d50d6eebf7338456",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Weekly Activity Walked",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "210",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "420",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "420",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7d59f12d8ab3c355",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Monthly Activity Walked",
+        "group": "b629da939e3728c5",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Monthly Activity Walked",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "900",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "1800",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "1800",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5dcb0f3fec7a8e54",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Annually Activity Walked",
+        "group": "5c2b7e28c59b4e56",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Annually Activity Walked",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "10950",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "21900",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "21900",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "89a47e0dd90b69d5",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "c268e83bdf1b32d1"
+            ]
+        ]
+    },
+    {
+        "id": "88763d71f8bac4a8",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 17",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count / 60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 80,
+        "wires": [
+            [
+                "f3688e79a1023125"
+            ]
+        ]
+    },
+    {
+        "id": "0d6eef25efe3b916",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 18",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "8f3e8af5e36677f3"
+            ]
+        ]
+    },
+    {
+        "id": "0f5bca1c2ff3a6ec",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 19",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "7d59f12d8ab3c355"
+            ]
+        ]
+    },
+    {
+        "id": "73d7b3473542270d",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 20",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count / 60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "5dcb0f3fec7a8e54"
+            ]
+        ]
+    },
+    {
+        "id": "5a28c34e50f0ef02",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "e7c939e17afb338e"
+            ]
+        ]
+    },
+    {
+        "id": "4d1fa3f19524b5a4",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "29dbb936051716ef"
+            ]
+        ]
+    },
+    {
+        "id": "80bf4cb60347377e",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "2cca08de94638272"
+            ]
+        ]
+    },
+    {
+        "id": "27716556916f4e41",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Daily Activity Ran",
+        "group": "212fcc6f7826dde8",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Daily Activity Ran",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "10",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "20",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "20",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 670,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "06b69aa47d47a198",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_daily_dis_ran",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "9a7c4bbae4086af3"
+            ]
+        ]
+    },
+    {
+        "id": "9a7c4bbae4086af3",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "15d5d645faad44a5"
+            ]
+        ]
+    },
+    {
+        "id": "4bc3645a93251cc8",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "06b69aa47d47a198"
+            ]
+        ]
+    },
+    {
+        "id": "15d5d645faad44a5",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 21",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "27716556916f4e41"
+            ]
+        ]
+    },
+    {
+        "id": "0e17a29863964f5f",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_weekly_dis_ran",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "1251cc157d38bdeb"
+            ]
+        ]
+    },
+    {
+        "id": "1251cc157d38bdeb",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "b247f8bf21096927"
+            ]
+        ]
+    },
+    {
+        "id": "6f924714dda09d6f",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Weekly Activity Ran",
+        "group": "d50d6eebf7338456",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Weekly Activity Ran",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "140",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "140",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 670,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b247f8bf21096927",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 22",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "6f924714dda09d6f"
+            ]
+        ]
+    },
+    {
+        "id": "ba6cc8ea6bd0faa0",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "0e17a29863964f5f"
+            ]
+        ]
+    },
+    {
+        "id": "9018bdf41261ed9a",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_monthly_dis_ran",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "9222cb9f3ba8de13"
+            ]
+        ]
+    },
+    {
+        "id": "9222cb9f3ba8de13",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "684f7501663d5019"
+            ]
+        ]
+    },
+    {
+        "id": "4fe7a88f152b5f5d",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Monthly Activity Ran",
+        "group": "b629da939e3728c5",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Monthly Activity Ran",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "300",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "600",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "600",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "684f7501663d5019",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 23",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "4fe7a88f152b5f5d"
+            ]
+        ]
+    },
+    {
+        "id": "b3e9397384c21bf1",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "9018bdf41261ed9a"
+            ]
+        ]
+    },
+    {
+        "id": "0596cc28e088b1ae",
+        "type": "http request",
+        "z": "815514c370b844ed",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "http://172.100.10.17:5001/get_anual_dis_ran",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [
+                "566e01b4c96893a1"
+            ]
+        ]
+    },
+    {
+        "id": "566e01b4c96893a1",
+        "type": "json",
+        "z": "815514c370b844ed",
+        "name": "",
+        "property": "pay",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "451997dd186545b3"
+            ]
+        ]
+    },
+    {
+        "id": "eb3c5ee956650438",
+        "type": "ui-gauge",
+        "z": "815514c370b844ed",
+        "name": "Annually Activity Ran",
+        "group": "5c2b7e28c59b4e56",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Annually Activity Ran",
+        "units": "minutes",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "3650",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "7300",
+                "color": "#0000ff"
+            }
+        ],
+        "min": "0",
+        "max": "7300",
+        "sizeThickness": "16",
+        "sizeGap": "4",
+        "sizeKeyThickness": "8",
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "451997dd186545b3",
+        "type": "function",
+        "z": "815514c370b844ed",
+        "name": "function 24",
+        "func": "//node.warn(msg.payload[msg.payload.length - 1]);\nif (Array.isArray(msg.payload) && msg.payload.length > 0) {\n    msg.payload = (msg.payload[msg.payload.length - 1].data_count/60).toFixed(2);\n}\nelse {\n    msg.payload = 0\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "eb3c5ee956650438"
+            ]
+        ]
+    },
+    {
+        "id": "9ece16faeeda023b",
+        "type": "inject",
+        "z": "815514c370b844ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "0596cc28e088b1ae"
+            ]
+        ]
+    }
+]
