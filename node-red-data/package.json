@@ -1,0 +1,13 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@flowfuse/node-red-dashboard": "~1.19.1",
+        "node-red-contrib-cpu": "~0.0.4",
+        "node-red-contrib-machine-learning-v2": "~1.0.9",
+        "node-red-dashboard": "~3.6.5",
+        "node-red-node-random": "~0.4.1"
+    }
+}
